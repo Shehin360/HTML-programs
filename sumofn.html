@@ -1,0 +1,42 @@
+<html>
+	<body>
+		<form>
+			<h1>Enter the number</h1><br>
+			<input type="text" id="num">
+			<input type="submit" onclick="sum()">
+		</form>
+		<script>
+			function sum(){
+			sum=0
+			num=document.getElementById("num").value;
+			document.write("for loop<br>","\n")
+			for(i=1;i<=num;i++)
+			{
+				document.write(i, "\t")
+				sum += i
+			}
+			document.write("<br>sum=",sum)
+			document.write("<br>while loop<br>\n")
+			i=1
+			sum=0
+			while(i<=num)
+			{
+				document.write(i, "\t")
+				sum += i
+				i++
+			}
+			document.write("<br>sum=",sum)
+			document.write("<br>do while<br>\n")
+			i=1
+			sum=0
+			do
+			{
+				document.write(i, "\t")
+				sum += i
+				i++
+			}while(i<=num)
+			document.write("<br>sum=",sum)
+			}
+		</script>
+	</body>
+</html>
